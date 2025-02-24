@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gradient Studio</title>
+    <!-- adding favicon -->
+    <link rel="shortcut icon" href="/Th" type="image/x-icon">
+    <!-- adding private css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- adding font awsome stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/regular.css" integrity="sha512-M/FJqWoATldJm2aBKIM8rHWfz1SEOy3sMumogiYtbE2YIkMVf6uyaPeIKjMHalSsvvIUwlAiTS3AisqGPoEJYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <header class="header flex flex-centered" id="header">
+        <nav class="nav-bar flex flex-col flex-centered">
+            <h1>The Gradient Studio</h1>
+            <ul class="nav-list flex flex-col">
+                <li><a href="#background-gradient-section" target="_blank">Background Gradient Generator</a></li>
+                <li><a href="#border-radius-section" target="_blank">Border Radius Generator</a></li>
+                <li><a href="#text-gradient-section" target="_blank">Text Gradient Generator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===========================================================
+     background gradient section
+     =============================================================== -->
+
+    <section class="section background-gradient-section flex flex-col flex-centered" id="background-gradient-section">
+        <h2 class="main-heading">Background Gradient Generator</h2>
+        <div class="container flex flex-col background-gradient-container">
+            <div class="output-box">
+            </div>
+            <div class="background-gradient-inputs grid grid-three-col">
+                <div class="direction-box input-box flex flex-col">
+                    <label for="background-gradient-direction">Direction</label>
+                    <input type="text" value="180deg" id="background-gradient-direction">
+                </div>
+                <div class="cp-box input-box flex flex-col">
+                    <label for="background-gradient-cp-1">Color 1</label>
+                    <input type="color" value="#004e98" id="background-gradient-cp-1" class="cp">
+                </div>
+                <div class="cp-box input-box flex flex-col">
+                    <label for="background-gradient-cp-2">Color 2</label>
+                    <input type="color" value="#004e98" id="background-gradient-cp-2" class="cp">
+                </div>
+            </div>
+            <div class="background-gradient-btns grid grid-two-col">
+                <button class="btn set-default">Set Default</button>
+                <button class="btn set-background">Set Background</button>
+            </div>
+
+            <div class="code-box container flex flex-col">
+                <p class="copy-btn flex "><i class="fa-regular fa-copy icon"></i></p>
+                <p class="code">background: linear-gradient(180deg, #004e98, #004e98) ;</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================================
+     border radius section
+     =============================================================== -->
+     <section class="section border-radius-section flex flex-col flex-centered" id="border-radius-section">
+        <h2 class="main-heading">Border Radius Generator</h2>
+        <div class="container border-radius-container flex flex-col flex-centered">
+            <div class="output-box-container">
+                <div class="output-box">
+
+                </div>
+            </div>
+
+            <div class="border-radius-input grid grid-two-col">
+                <div class="slider-container flex flex-col">
+                    <label for="top-left-radius">Top left radius</label>
+                    <input type="range" min="0" max="100" id="top-left-radius" value="0">
+                </div>
+                <div class="slider-container flex flex-col">
+                    <label for="top-right-radius">Top right radius</label>
+                    <input type="range" min="0" max="100" id="top-right-radius" value="0">
+                </div>                
+                <div class="slider-container flex flex-col">
+                    <label for="bottom-left-radius">Bottom left radius</label>
+                    <input type="range" min="0" max="100" id="bottom-left-radius" value="0">
+                </div>                
+                <div class="slider-container flex flex-col">
+                    <label for="bottom-right-radius">Bottom right radius</label>
+                    <input type="range" min="0" max="100" id="bottom-right-radius" value="0">
+                </div>                
+            </div>
+
+            <div class="border-radius-btns">
+                <button class="btn set-default">Set Default</button>
+            </div>
+
+            <div class="code-box container flex flex-col">
+                <p class="copy-btn flex"><i class="fa-regular fa-copy icon"></i></p>
+                <p class="code">border-radius: 0% 0% 0% 0%;</p>
+            </div>
+        </div>
+     </section>
+    <!-- ===========================================================
+     text gradient  section
+     =============================================================== -->
+
+     <section class="section text-gradient-section flex flex-col flex-centered" id="text-gradient-section">
+        <h2 class="main-heading">Text Gradient Generator</h2>
+        <div class="container flex flex-col flex-centered text-gradient-container">
+            <div class="output-box flex flex-centered">
+                <h4 class="output-text"> Hello World
+                </h4>
+            </div>
+            <div class="text-gradient-inputs grid grid-three-col">
+                <div class="direction-box input-box flex flex-col">
+                    <label for="text-gradient-direction">Direction</label>
+                    <input type="text" value="180deg" id="text-gradient-direction">
+                </div>
+                <div class="cp-box input-box flex flex-col">
+                    <label for="text-gradient-cp-1">Color 1</label>
+                    <input type="color" value="#ffffff" id="text-gradient-cp-1" class="cp">
+                </div>
+                <div class="cp-box input-box flex flex-col">
+                    <label for="text-gradient-cp-2">Color 2</label>
+                    <input type="color" value="#ffffff" id="text-gradient-cp-2" class="cp">
+                </div>
+            </div>
+            <div class="text-gradient-btns">
+                <button class="btn set-default">Set Default</button>
+            </div>
+
+            <div class="code-box container flex flex-col" style="position: relative;">
+                <p class="copy-btn flex "><i class="fa-regular fa-copy icon"></i></p>
+                <p class="code">background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background: linear-gradient(180deg, #000, #000);</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

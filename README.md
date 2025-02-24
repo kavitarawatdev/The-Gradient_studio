@@ -3,7 +3,7 @@
 <br>
 Author - Kavita Rawat
 <br>
-gamil - ikavitarawat227@gmail.com
+gmail - ikavitarawat227@gmail.com
 <br>
 
 
